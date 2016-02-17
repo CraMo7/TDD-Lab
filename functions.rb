@@ -29,12 +29,9 @@ def get_first_key_name_in_hash(hash, index)
 end
 
 def get_capitals_from_nested_hash(top_level_hash)
-  count = 0
-  num_of_countries = top_level_hash.keys.length
   array_of_capitals = []
-    while count < num_of_countries
-      current_country_number = top_level_hash.keys[count]
-     array_of_capitals[count] = current_country_number[:capital]
-
+    for key, value in top_level_hash
+     array_of_capitals.push(value[:capital])
     end
+    return array_of_capitals
 end
