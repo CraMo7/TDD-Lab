@@ -18,7 +18,7 @@ class TestMyFunctions < MiniTest::Test
 
   def test_find_ravenclaw_in_array
     hogwarts = [ 'Hufflepuff', 'Slytherin', 'Gryffindor', 'Ravenclaw' ]
-    result = find_ravenclaw_in_array(hogwarts)
+    result = find_ravenclaw_in_array(hogwarts, "Ravenclaw")
     assert_equal(true, result)
   end
 
