@@ -29,7 +29,7 @@ class TestMyFunctions < MiniTest::Test
       'Val'  => 1356,
       'Rick' => 1
     }
-    result = get_first_key_name_in_hash(teacher_wallets)
+    result = get_first_key_name_in_hash(teacher_wallets, 0)
     assert_equal("Tony", result)
   end
 

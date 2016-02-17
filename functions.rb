@@ -18,6 +18,6 @@ def find_ravenclaw_in_array(array, search_term)
 
 end
 
-def get_first_key_name_in_hash(hash)
-  return hash.keys[0]
+def get_first_key_name_in_hash(hash, index)
+  return hash.keys[index]
 end
